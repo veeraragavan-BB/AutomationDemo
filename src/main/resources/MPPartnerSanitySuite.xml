@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNGTestSuite" parallel="tests" thread-count="3">
+
+    <test name="CreditCardTest" parallel="true" thread-count="4">
+        <groups>
+            <run>
+                <include name="PartnerSanity" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationdemo.tests.CreditCardTest" >
+                <methods>
+                    <include name="CC_Verify_And_Validate_Compare_Offer_Functionality" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="PersonalLoanTest">
+        <groups>
+            <run>
+                <include name="PartnerSanity" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationdemo.tests.PersonalLoanTest" />
+        </classes>
+    </test>
+
+    <test name="HomeLoanTest">
+        <groups>
+            <run>
+                <include name="PartnerSanity" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationdemo.tests.HomeLoanTest" />
+        </classes>
+    </test>
+
+</suite>
+
