@@ -49,4 +49,11 @@ public class CreditCardTest {
         sleepThread();
         System.out.println("Executed, test-case: CC_Verify_App_Page_Navigation_And_App_Submission.");
     }
+
+    @Test(groups = {"Regression", "PartnerSanity"}, description = ""/*, priority = 4*/)
+    public void CC_Verify_Sample_Credit()
+    {
+        sleepThread();
+        System.out.println("Executed,test-case: CC_Verify_Sample_Credit.");
+    }
 }
